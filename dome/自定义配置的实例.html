@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基础示例</title>
+    <style>
+        .info{
+            padding: 100px;
+        }
+    </style>
+    <script src="../lazyLoad.min.js"></script>
+</head>
+<body>
+<h1>图片懒加载示例</h1>
+<h5>图片懒加载是为了，页面载入，需要请求的图片太多，导致图片加载有延时，本插件利用体会src属性的方式，实现分流加载图片。</h5>
+<h5>主要用于移动端，特别是单页面多图片网页。</h5>
+<p class="info">我是说明</p>
+<img alt="" img-original="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532692709411&di=5129a8cac6162cb19b045ef0d0854005&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F63d0f703918fa0ece5f167da2a9759ee3d6ddb37.jpg">
+<p class="info">我是说明</p>
+<img alt="" img-original="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532692742978&di=a007202b19c87698c8a917b93e933a90&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F3c6d55fbb2fb43165a73bbab2ca4462308f7d3f7.jpg">
+<p class="info">我是说明</p>
+<img alt="" img-original="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532692742977&di=fcb3ebd7e06b5103b170ba31c850340f&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F11385343fbf2b211e4335198c68065380dd78ec3.jpg">
+<p class="info">我是说明</p>
+<img alt="" img-original="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532692742977&di=ae281d31b1bb50e714196290446b2b06&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F960a304e251f95ca50958c64c5177f3e660952fb.jpg">
+<p class="info">我是说明</p>
+<img alt="" img-original="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532692742977&di=f222875ed8bff3c31c6465acb3ce5ec7&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbba1cd11728b4710f294b823cfcec3fdfd0323a1.jpg">
+</body>
+<script>
+    window.onload = function () {
+        const lazy = new lazyLoadImg({
+            lazyDemo: "img-original",
+            top: 120
+        })
+        lazy.init()
+    }
+</script>
+</html>
